@@ -1,0 +1,187 @@
+/* Set default font to all elements */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+  font-family: 'Open Sans';
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  font-variant-numeric: normal;
+}
+
+/*
+  Gaia theme variables
+  */
+
+:root {
+  /** Grey Colors
+     ---------------------------------------------------------*/
+
+  --color-alpha: #333333;
+  --color-beta: #ffffff;
+  --color-gamma: #4d4d4d;
+  --color-delta: #5f5f5f;
+  --color-epsilon: #858585;
+  --color-zeta: #a6a6a6;
+  --color-eta: #c7c7c7;
+  --color-theta: #e7e7e7;
+  --color-iota: #f4f4f4;
+  --color-white: #ffffff;
+
+  /** Brand Colors
+   ---------------------------------------------------------*/
+
+  --color-darkblue: #00539f;
+  --color-blue: #00caf2;
+  --color-turquoise: #27c8c2;
+  --color-darkorange: #e66000;
+  --color-orange: #ff9500;
+  --color-yellow: #ffcb00;
+  --color-violet: #c40c84;
+  --color-carrotorange: #eb9423;
+  --color-wathetblue: #005da5;
+
+  /* gold */
+  --color-gold: #ffa000;
+  --color-gold-pressed: #cc8000;
+
+  --color-warning: #fbbd3c;
+  --color-destructive: #e2443a;
+  --color-preferred: #00ba91;
+
+  /** KaiOS Colors
+     ---------------------------------------------------------*/
+
+  /* Grey Scale Colors */
+  --color-gs100: #000000;
+  --color-gs90: #323232;
+  --color-gs70: #6a6a6a;
+  --color-gs45: #8c8c8c;
+  --color-gs20: #cccccc;
+  --color-gs10: #e6e6e6;
+  --color-gs00: #ffffff;
+
+  /* Primary Colors - Best for Highlighting selected UI element */
+  --color-purple: #873eff;
+  --color-pink: #f6529b;
+  --color-lime: #82c51b;
+  --color-cyan: #1cc1c4;
+  --color-blue: #0da1e1;
+  --color-orange: #ff8329;
+  --color-red: #f3203d;
+
+  /* Mid-dark Colors - Generally used for the press effect */
+  --color-purple-mid-dark: #6c32cc;
+  --color-pink-mid-dark: #bf2392;
+  --color-lime-mid-dark: #6b9a23;
+  --color-cyan-mid-dark: #31979e;
+  --color-blue-mid-dark: #0a80b4;
+  --color-orange-mid-dark: #cc5310;
+  --color-red-mid-dark: #c21930;
+
+  /* Dark Colors - Generally used for the header background */
+  --color-purple-dark: #320374;
+  --color-pink-dark: #49122c;
+  --color-lime-dark: #143a06;
+  --color-cyan-dark: #03757c;
+  --color-blue-dark: #21407a;
+  --color-orange-dark: #391e0a;
+  --color-red-dark: #5c0600;
+
+  /** Background
+     ---------------------------------------------------------*/
+
+  --background: var(--color-beta);
+  --background-plus: var(--color-theta);
+  --background-minus: var(--color-zeta);
+
+  /** Text Color
+     ---------------------------------------------------------*/
+
+  --text-color: var(--color-gamma);
+  --text-color-minus: var(--color-eta);
+
+  /** Button
+     ---------------------------------------------------------*/
+
+  --button-background: var(--color-iota);
+
+  /** Links
+     ---------------------------------------------------------*/
+
+  --link-color: var(--highlight-color);
+
+  /** Inputs
+     ---------------------------------------------------------*/
+
+  --input-background: var(--color-beta);
+  --input-color: var(--color-alpha);
+  --input-clear-background: #909ca7;
+
+  /** Buttons
+     ---------------------------------------------------------*/
+
+  --button-box-shadow: inset 0 -1px 0 #d8d8d8, inset 0 1px 0 #eeeeee;
+  --button-box-shadow-active: var(--button-box-shadow);
+
+  --color-purple-pressed: var(--color-purple-mid-dark);
+  --color-pink-pressed: var(--color-pink-mid-dark);
+  --color-lime-pressed: var(--color-lime-mid-dark);
+  --color-cyan-pressed: var(--color-cyan-mid-dark);
+  --color-blue-pressed: var(--color-blue-mid-dark);
+  --color-orange-pressed: var(--color-orange-mid-dark);
+  --color-red-pressed: var(--color-red-mid-dark);
+
+  /** Header
+     ---------------------------------------------------------*/
+
+  --header-purple-background: var(--color-purple-dark);
+  --header-pink-background: var(--color-pink-dark);
+  --header-lime-background: var(--color-lime-dark);
+  --header-cyan-background: var(--color-cyan-dark);
+  --header-blue-background: var(--color-blue-dark);
+  --header-orange-background: var(--color-orange-dark);
+  --header-red-background: var(--color-red-dark);
+
+  --header-disabled-button-color: rgba(255, 255, 255, 0.3);
+
+  /** Statusbar, Softkeybar and ClientHeight
+     *  Should update to proper value according to device size
+     ---------------------------------------------------------*/
+  --statusbar-height: 2.6rem;
+  --softkeybar-height: 3rem;
+  --tabs-height: 3rem;
+  --header-height: 2.8rem;
+  --header-large-text-height: 2.4rem;
+  --tabbar-height: 2.7rem;
+  --list-item-height: 6rem;
+  --progress-bar-height: 6rem;
+  --slider-height: 6rem;
+  --separator-height: 2.4rem;
+  --button-height: 3.6rem;
+  --rocketbar-urlbar-height: 3.6rem;
+
+  --statusbar-softkeybar-height: 5.6rem;
+  --header-tabbar-height: 5.5rem;
+
+  --client-height: calc(100% - var(--statusbar-softkeybar-height));
+}
+
+.theme-system,
+.theme-launcher {
+  /** Brand Color
+     ---------------------------------------------------------*/
+
+  --highlight-color: var(--color-purple);
+  --highlight-color-pressed: var(--color-purple-pressed);
+
+  /** Header
+     ---------------------------------------------------------*/
+
+  --header-background: var(--header-purple-background);
+
+  --header-color: var(--color-beta);
+}
