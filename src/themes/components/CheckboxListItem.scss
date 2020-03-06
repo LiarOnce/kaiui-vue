@@ -1,0 +1,88 @@
+@import '../../theme/fonts.scss';
+@import '../../theme/theme.scss';
+@import '../../theme/layout';
+@import '../../kai-font/style.scss';
+
+:root {
+  --cbl-text-focused: var(--color-gs00);
+  --cbl-checkbox-unfocused: var(--color-zeta);
+}
+.kai-cbl {
+  width: auto;
+  min-height: var(--list-item-height);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  outline: none;
+  &:focus {
+    color: var(--cbl-text-focused);
+  }
+
+  &-box {
+    margin: 0 1rem;
+
+    &-input-focused {
+      color: var(--cbl-text-focused);
+    }
+
+    &-input-unfocused {
+      color: var(--cbl-checkbox-unfocused);
+    }
+
+    > input[type='checkbox'] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      position: relative;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 35%;
+    }
+
+    > input[type='checkbox']::before {
+      font-family: $icomoon-font-family;
+      position: absolute;
+      font-size: 2rem;
+    }
+
+    > input[type='checkbox']:not(:checked)::before {
+      content: $kai-icon-checkbox-unchecked;
+    }
+
+    > input[type='checkbox']:checked::before {
+      content: $kai-icon-checkbox-checked;
+    }
+  }
+
+  &-line {
+    font-family: 'Open Sans';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    span,
+    label {
+      padding: 0;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+
+  .left {
+    box-sizing: border-box;
+    padding: 1rem 0 1rem 1rem;
+  }
+  .right {
+    box-sizing: border-box;
+    padding: 1rem 1rem 1rem 0;
+  }
+
+  &-primary {
+    @extend .p-pri;
+  }
+
+  &-secondary {
+    @extend .p-sec;
+  }
+}
