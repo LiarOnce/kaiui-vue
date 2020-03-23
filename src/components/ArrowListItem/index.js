@@ -1,8 +1,4 @@
-import '../themes/components/ArrowListItem.scss';
-import ArrowListItem from './ArrowListItem';
-
-ArrowListItem.install = function(vue) {
-    Vue.component(ArrowListItem.name, ArrowListItem);
-}
+import '../../styles/ArrowListItem.scss';
+import ArrowListItem from './ArrowListItem.vue';
 
 export default ArrowListItem;

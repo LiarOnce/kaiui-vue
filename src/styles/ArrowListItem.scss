@@ -1,7 +1,7 @@
-@import '../../theme/fonts.scss';
-@import '../../theme/theme.scss';
-@import '../../theme/layout';
-@import '../../kai-font/style.scss';
+@import '../theme/fonts.scss';
+@import '../theme/theme.scss';
+@import '../theme/layout.scss';
+@import '../kai-font/style.scss';
 
 :root {
   --al-text-focused: var(--color-gs00);

@@ -66,7 +66,7 @@ const Button = React.memo(props => {
     <img src={iconSrc} alt="" />;
 
   const iconComp = (
-    <div className={iconCls}>
+    <div className={ iconCls}>
       {renderedIcon}
     </div>
   );
