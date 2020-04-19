@@ -10,48 +10,48 @@ ul {
 }
 
 %text-ellipsis {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   overflow: hidden;
+ }
 
-@mixin flex($direction: column, $inline: block) {
-  display: if($inline == block, flex, inline-flex);
-  flex-direction: $direction;
+.flex(@direction: column, @inline: block) {
+  display: if(@inline = block, flex, inline-flex);
+  flex-direction: @direction;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-@mixin list-item-icon {
+.list-item-icon() {
   margin: 0 1rem;
   @extend .icon-font;
 }
 
-@mixin button-icon {
+.button-icon() {
   margin: 0 1rem;
   @extend .button-icon-font;
 }
 
-@mixin list-item-arrow {
+.list-item-arrow() {
   margin: 0 1rem;
   @extend .arrow-font;
 }
 
-@mixin progress-bar-left-filler {
+.progress-bar-left-filler() {
   height: 100%;
   border-radius: 50px 0 0 50px;
   transition: width 0.5s ease-in;
   margin-right: 0.3rem;
 }
 
-@mixin progress-bar-right-filler {
+.progress-bar-right-filler() {
   height: 100%;
   border-radius: 0 50px 50px 0;
   transition: width 0.5s ease-in;
 }
 
-@mixin progress-bar-buffer {
+.progress-bar-buffer() {
   display: block;
   position: absolute;
   content: '';
@@ -65,22 +65,22 @@ ul {
 
 @keyframes loading {
   from {
-    left: -50px;
-    width: 30%;
+	left: -50px;
+	width: 30%;
   }
   50% {
-    width: 30%;
+	width: 30%;
   }
   70% {
-    width: 70%;
+	width: 70%;
   }
   80% {
-    left: 50%;
+	left: 50%;
   }
   95% {
-    left: 120%;
+	left: 120%;
   }
   to {
-    left: 100%;
+	left: 100%;
   }
 }
