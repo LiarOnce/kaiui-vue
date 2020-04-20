@@ -1,9 +1,10 @@
-@import '../../theme/fonts.scss';
-@import '../../theme/theme.scss';
+@import '../themes/fonts.less';
+@import '../themes/theme.less';
 
 :root {
   --btl-text-focused: var(--color-gs00);
 }
+
 .kai-btl {
   height: fit-content;
   width: 100%;
@@ -17,20 +18,18 @@
 
   span,
   label {
-    padding: 0;
-    width: 100%;
-    overflow: hidden;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
   }
 
   &:focus {
-    color: var(--btl-text-focused);
+	color: var(--btl-text-focused);
   }
 
-  &-header {
-    @extend h2;
+  &-header:extend(h2) {
   }
 
-  &-body {
-    @extend p;
+  &-body:extend(p) {
   }
 }

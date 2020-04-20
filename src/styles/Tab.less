@@ -1,6 +1,6 @@
-@import '../../theme/fonts.scss';
-@import '../../theme/theme.scss';
-@import '../../theme/layout';
+@import '../themes/fonts.less';
+@import '../themes/theme.less';
+@import '../themes/layout';
 
 :root {
   --tab-background-color: var(--color-gs00);
@@ -16,13 +16,12 @@
   margin-bottom: 0.2rem;
   box-shadow: 0 2.45rem 0 0 var(--tab-underline-color);
 
-  &-label {
-    @extend h3;
-    margin: 0 0.5rem;
-    overflow: hidden;
-    height: 3rem;
-    line-height: 3rem;
-    font-weight: 900;
+  &-label:extend(h3) {
+	margin: 0 0.5rem;
+	overflow: hidden;
+	height: 3rem;
+	line-height: 3rem;
+	font-weight: 900;
   }
 }
 
@@ -35,12 +34,11 @@
   border-radius: 6px;
   margin-bottom: 0.2rem;
 
-  &-label {
-    @extend h3;
-    margin: 0 0.5rem;
-    overflow: hidden;
-    height: 3rem;
-    line-height: 3rem;
-    font-weight: 200;
+  &-label:extend(h3) {
+	margin: 0 0.5rem;
+	overflow: hidden;
+	height: 3rem;
+	line-height: 3rem;
+	font-weight: 200;
   }
 }

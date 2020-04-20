@@ -1,5 +1,5 @@
-@import '../../theme/fonts.scss';
-@import '../../theme/theme.scss';
+@import '../themes/fonts.less';
+@import '../themes/theme.less';
 
 :root {
   --separator-background-color: var(--color-gs10);
@@ -10,10 +10,10 @@
   height: var(--separator-height);
   width: 100%;
   background-color: var(--separator-background-color);
-  &-text {
-    @extend h4;
-    margin: 0 1rem;
-    text-align: center;
-    color: var(--separator-text-color);
+
+  &-text:extend(h4) {
+	margin: 0 1rem;
+	text-align: center;
+	color: var(--separator-text-color);
   }
 }

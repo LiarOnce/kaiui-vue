@@ -1,5 +1,5 @@
-@import '../../theme/fonts.scss';
-@import '../../theme/theme.scss';
+@import '../themes/fonts.less';
+@import '../themes/theme.less';
 
 :root {
   --tl-text-focused: var(--color-gs00);
@@ -17,24 +17,21 @@
 
   span,
   label {
-    padding: 0;
-    width: 100%;
-    overflow: hidden;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
   }
 
   &:focus {
-    color: var(--tl-text-focused);
+	color: var(--tl-text-focused);
   }
 
-  &-primary {
-    @extend .p-pri;
+  &-primary:extend(.p-pri) {
   }
 
-  &-secondary {
-    @extend .p-sec;
+  &-secondary:extend(.p-sec) {
   }
 
-  &-tertiary {
-    @extend .p-thi;
+  &-tertiary:extend(.p-thi) {
   }
 }
