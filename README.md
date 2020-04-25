@@ -25,7 +25,7 @@ Components which are complete but still need polish or heavy testing:
 - [ ] ArrowListItem
 - [ ] BodyTextListItem
 - [ ] Button
-- [ ] Header 
+- [x] Header 
 - [ ] IconListItem
 - [ ] RadioButtonListItem
 - [ ] Separator
