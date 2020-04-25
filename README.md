@@ -19,7 +19,7 @@ vue-cli-service serve
 
 General:
 - [x] Switch SASS/SCSS to LESS or change SASS package. (I don't like `node-sass` package)
-- [ ] LESS exporting variables to use dynamically in components. (need help)
+- [x] LESS exporting variables to use dynamically in components. (maybe there is a better way using webpack, need help)
 
 Components which are complete but still need polish or heavy testing:
 - [ ] ArrowListItem
@@ -38,5 +38,6 @@ Components which are complete but still need polish or heavy testing:
 Views:
 - [ ] ListView
 - [ ] TabView
+- [ ] GridView
 
 

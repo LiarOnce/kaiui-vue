@@ -10,7 +10,7 @@
 </template>
 
 <script>
-    //import colors from '../../themes/colors.less'; fixme
+    import * as colors from '!!../utils/less-loader.js!../themes/colors.less'; //todo: better way using webpack?
     const prefixCls = 'kai-header';
 
     export default {
@@ -18,7 +18,7 @@
         props: {
             backgroundColor: {
                 type: String,
-                default: "#320374"//fixme: colors.headerPurple
+                default: colors['headerPurple']
             }
         },
         computed: {
@@ -37,5 +37,5 @@
 </script>
 
 <style lang="less">
-	@import '../../styles/Header.less';
+	@import '../styles/Header.less';
 </style>
