@@ -22,7 +22,7 @@ General:
 - [x] LESS exporting variables to use dynamically in components. (maybe there is a better way using webpack, need help)
 
 Components which are complete but still need polish or heavy testing:
-- [ ] ArrowListItem
+- [x] ArrowListItem
 - [ ] BodyTextListItem
 - [ ] Button
 - [x] Header 
