@@ -33,7 +33,7 @@ Components which are complete but still need polish or heavy testing:
 - [ ] SoftKey (need help)
 - [ ] Tab
 - [ ] TextInput
-- [ ] TextListItem
+- [x] TextListItem
 
 Views:
 - [ ] ListView
