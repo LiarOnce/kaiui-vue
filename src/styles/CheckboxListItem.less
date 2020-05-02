@@ -79,14 +79,12 @@
 
   .right {
 	box-sizing: border-box;
-	padding: 1rem 1rem 1rem 0;
+	padding: 1rem 1rem 1rem 1rem;
   }
 
-  &-primary {
-	.p-pri();
+  &-primary:extend(.p-pri) {
   }
 
-  &-secondary {
-	.p-sec();
+  &-secondary:extend(.p-sec) {
   }
 }

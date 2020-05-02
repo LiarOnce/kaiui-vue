@@ -28,6 +28,7 @@ Components which are complete but still need polish or heavy testing:
 - [x] Header 
 - [ ] IconListItem
 - [ ] RadioButtonListItem
+- [x] CheckboxListItem
 - [x] Separator
 - [ ] Slider
 - [ ] SoftKey (need help)
