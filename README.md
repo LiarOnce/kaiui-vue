@@ -23,7 +23,7 @@ General:
 
 Components which are complete but still need polish or heavy testing:
 - [x] ArrowListItem
-- [ ] BodyTextListItem
+- [x] BodyTextListItem
 - [ ] Button
 - [x] Header 
 - [ ] IconListItem
