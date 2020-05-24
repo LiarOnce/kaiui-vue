@@ -1,0 +1,86 @@
+@import '../themes/fonts.less';
+@import '../themes/theme.less';
+@import '../themes/layout.less';
+
+:root {
+  --pbar-right-filler-color: var(--color-gs20);
+  --pbar-right-buffer-color: var(--color-gs45);
+
+  --pbar-text-focused: var(--color-gs00);
+  --pbar-right-filler-focused-color: var(--color-gs45);
+}
+
+.kai-pbar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  height: var(--progress-bar-height);
+  width: 100%;
+  outline: none;
+
+  &:focus {
+	color: var(--pbar-text-focused);
+  }
+
+  &-line:extend(.p-pri) {
+	padding-bottom: 1rem;
+	width: 100%;
+	overflow: hidden;
+  }
+
+  &-bar-wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	height: 0.5rem;
+  }
+
+  &-left-filler {
+	&-focused {
+	  .progress-bar-left-filler();
+	}
+
+	&-unfocused {
+	  .progress-bar-left-filler();
+	}
+  }
+
+  &-right-filler-download {
+	&-focused {
+	  .progress-bar-right-filler();
+	  background-color: var(--pbar-right-filler-focused-color);
+	}
+
+	&-unfocused {
+	  .progress-bar-right-filler();
+	  background-color: var(--pbar-right-filler-color);
+	}
+  }
+
+  &-right-filler-buffer {
+	&-focused {
+	  .progress-bar-right-filler();
+	  background-color: var(--pbar-right-filler-color);
+	  overflow: hidden;
+	  position: relative;
+
+	  &:before {
+		.progress-bar-buffer();
+	  }
+	}
+
+	&-unfocused {
+	  .progress-bar-right-filler();
+	  background-color: var(--pbar-right-filler-color);
+	  overflow: hidden;
+	  position: relative;
+
+	  &:before {
+		.progress-bar-buffer();
+	  }
+	}
+  }
+}

@@ -2,20 +2,43 @@
 
 > KaiOS UI Component for Vue (developing, need help)
 
-The project is porting code from [AdrianMachado/KaiUI](https://github.com/AdrianMachado/KaiUI).
+This project is port from [AdrianMachado/KaiUI](https://github.com/AdrianMachado/KaiUI) React library. After we develop similar features we will branch from it and work on custom components similar to components mentioned in this [style guide](https://developer.kaiostech.com/design-guide/ui-component).
 
-**The project is developing so slow, please do not use it for production purposes until the code has been ported. But you can still contribute code to this project to make it complete.**
+This code is **NOT** production ready and is in early stages of development.
+
+**Project development is slow, we need help.**
 
 ## Build Setup
-
+You need vue-cli and some experience with nodejs.
 ``` bash
 npm install
-npm run build
+vue-cli-service serve
 ```
 
 ## TODO List
 
-- [ ] Porting code completed (React to Vue).
+General:
+- [x] Switch SASS/SCSS to LESS or change SASS package. (I don't like `node-sass` package)
+- [x] LESS exporting variables to use dynamically in components. (maybe there is a better way using webpack, need help)
 
-- [ ] Switch SASS/SCSS to LESS or change SASS package.(I don't like `node-sass` package)
+Components which are complete but still need polish or heavy testing:
+- [x] ArrowListItem
+- [x] BodyTextListItem
+- [x] Button
+- [x] Header 
+- [x] IconListItem
+- [ ] RadioButtonListItem
+- [x] CheckboxListItem
+- [x] Separator
+- [ ] Slider
+- [ ] SoftKey (need help)
+- [ ] Tab
+- [ ] TextInput
+- [x] TextListItem
+
+Views:
+- [ ] ListView
+- [ ] TabView
+- [ ] GridView
+
 
