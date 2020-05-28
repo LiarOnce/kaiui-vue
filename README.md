@@ -36,6 +36,7 @@ Components which are complete but still need polish or heavy testing:
 - [ ] Tabs (need help)
 - [ ] TextInput
 - [x] TextListItem
+- [ ] ProgressBar
 
 Views:
 - [ ] ListView
