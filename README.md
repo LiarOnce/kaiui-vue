@@ -32,8 +32,8 @@ Components which are complete but still need polish or heavy testing:
 - [x] CheckboxListItem
 - [x] Separator
 - [x] Slider
-- [ ] SoftKey (need help)
-- [ ] Tabs (need help)
+- [x] SoftKey (need help)
+- [x] Tabs (need help)
 - [x] TextInput
 - [x] TextListItem
 - [x] ProgressBar
