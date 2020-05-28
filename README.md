@@ -34,9 +34,9 @@ Components which are complete but still need polish or heavy testing:
 - [x] Slider
 - [ ] SoftKey (need help)
 - [ ] Tabs (need help)
-- [ ] TextInput
+- [x] TextInput
 - [x] TextListItem
-- [ ] ProgressBar
+- [x] ProgressBar
 
 Views:
 - [ ] ListView
