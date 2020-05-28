@@ -61,16 +61,12 @@
 	  width: @track-width;
 	  height: @track-height;
 	  background: @track-c;
-	  border-radius: 50px;
 
-	  if(@fill = 1) {
-	  & {
-		background: linear-gradient(@fill-c, @fill-c)
-		  0 /
-		  var(--sx)
-		100% no-repeat @track-c;
+	  & when (@fill = 1) {
+		background: linear-gradient(@fill-c, @fill-c) calc(0 / var(--sx)) 100% no-repeat @track-c;
 	  }
-	}
+
+	  border-radius: 50px;
 	}
 	.fill() {
 	  height: @track-height;
@@ -93,7 +89,7 @@
 
 	  --range: calc(var(--max) - var(--min));
 	  --ratio: calc((var(--val) - var(--min)) / var(--range));
-	  --sx: 0.5 * @{thumb-diam} + var(--ratio) * (100% - @{thumb-diam});
+	  --sx: 0.5 * @thumb-diam + var(--ratio) * (100% - @thumb-diam);
 	  margin: 0;
 	  padding: 0;
 	  width: @track-width;
@@ -102,7 +98,7 @@
 	  font: 1em/1 arial, sans-serif;
 
 	  &::-webkit-slider-runnable-track {
-	  	.track(1);
+		.track(1);
 	  }
 
 	  &::-moz-range-track {

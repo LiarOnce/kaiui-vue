@@ -31,7 +31,7 @@ Components which are complete but still need polish or heavy testing:
 - [x] RadioButtonListItem
 - [x] CheckboxListItem
 - [x] Separator
-- [ ] Slider
+- [x] Slider
 - [ ] SoftKey (need help)
 - [ ] Tabs (need help)
 - [ ] TextInput
