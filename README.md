@@ -20,6 +20,7 @@ vue-cli-service serve
 General:
 - [x] Switch SASS/SCSS to LESS or change SASS package. (I don't like `node-sass` package)
 - [x] LESS exporting variables to use dynamically in components. (maybe there is a better way using webpack, need help)
+- [ ] Implement moving focus using hardware buttons
 
 Components which are complete but still need polish or heavy testing:
 - [x] ArrowListItem
@@ -27,14 +28,15 @@ Components which are complete but still need polish or heavy testing:
 - [x] Button
 - [x] Header 
 - [x] IconListItem
-- [ ] RadioButtonListItem
+- [x] RadioButtonListItem
 - [x] CheckboxListItem
 - [x] Separator
-- [ ] Slider
-- [ ] SoftKey (need help)
-- [ ] Tab
-- [ ] TextInput
+- [x] Slider
+- [x] SoftKey (need help)
+- [x] Tabs (need help)
+- [x] TextInput
 - [x] TextListItem
+- [x] ProgressBar
 
 Views:
 - [ ] ListView
