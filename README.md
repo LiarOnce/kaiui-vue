@@ -21,6 +21,7 @@ General:
 - [x] Switch SASS/SCSS to LESS or change SASS package. (I don't like `node-sass` package)
 - [x] LESS exporting variables to use dynamically in components. (maybe there is a better way using webpack, need help)
 - [ ] Implement moving focus using hardware buttons
+- [ ] Alternatives to `react-swipeable-views`
 
 Components which are complete but still need polish or heavy testing:
 - [x] ArrowListItem
@@ -41,6 +42,8 @@ Components which are complete but still need polish or heavy testing:
 Views:
 - [ ] ListView
 - [ ] TabView
-- [ ] GridView
+- [ ] GridView (Not provided in [AdrianMachado/KaiUI](https://github.com/AdrianMachado/KaiUI), need to write your own)
 
+Toasts: 
 
+- [ ] Toast

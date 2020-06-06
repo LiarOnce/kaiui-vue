@@ -12,7 +12,7 @@
 </template>
 
 <script>
-		const prefixCls = 'kat-softkey';
+		const prefixCls = 'kai-softkey';
 
     export default {
         name: "SoftKey",
