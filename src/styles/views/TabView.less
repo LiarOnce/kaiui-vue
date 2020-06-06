@@ -1,0 +1,19 @@
+@import '../../theme/fonts.less';
+@import '../../theme/theme.less';
+@import '../../theme/layout.less';
+
+.kai-tab-view {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  &-tabs {
+    flex-shrink: 0;
+  }
+  &-content {
+    flex-grow: 1;
+    height: calc(100% - 3rem);
+    overflow: auto;
+  }
+}
